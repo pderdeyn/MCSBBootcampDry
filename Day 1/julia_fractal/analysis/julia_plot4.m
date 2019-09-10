@@ -8,7 +8,7 @@
 
 clear
 
-load('..\data\juliaSet1.mat');
+load('..\data\juliaSet4.mat');
 
 juliaSet = nmax<22; % Julia set is defined as p values that mapped to infinity (here defined as abs(z)>2).
 
@@ -21,4 +21,4 @@ figure(2); clf; hold on; box on;
 scatter(real(p(juliaSet)), imag(p(juliaSet)), 10, nmax(juliaSet));
 colormap(cool);
 
-saveas(f1,'julia1.png')
+saveas(f1,'julia4.png')
