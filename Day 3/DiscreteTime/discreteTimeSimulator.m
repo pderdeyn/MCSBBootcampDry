@@ -9,7 +9,7 @@ x(1) = 1.0; % initial condition
 
 for n=2:nMax
     
-    x(n) = x(n-1) + 5;
+    x(n) = 1.1*x(n-1) + 5;
     
 end % finished loop through days
 
