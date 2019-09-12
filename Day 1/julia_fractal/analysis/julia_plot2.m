@@ -8,7 +8,11 @@
 
 clear
 
+<<<<<<< HEAD
 load('..\data\juliaSet2.mat');
+=======
+load('/Users/matthewbovyn/Desktop/juliafrac/data/juliaSet1.mat');
+>>>>>>> 5dea9721b88e0d9d439c6dc4bd0810479ba13720
 
 juliaSet = nmax<22; % Julia set is defined as p values that mapped to infinity (here defined as abs(z)>2).
 
@@ -17,8 +21,18 @@ f1=figure(1); clf; hold on; box on;
 plot(real(p(juliaSet)), imag(p(juliaSet)), '.k');
 
 % plot coloring according to exit number
+<<<<<<< HEAD
 figure(2); clf; hold on; box on;
 scatter(real(p(juliaSet)), imag(p(juliaSet)), 10, nmax(juliaSet));
 colormap(cool);
 
 saveas(f1,'julia2.png')
+=======
+f2=figure(2); clf; hold on; box on;
+scatter(real(p(juliaSet)), imag(p(juliaSet)), 10, nmax(juliaSet));
+colormap(cool);
+
+set(gcf, 'PaperUnits', 'centimeters');
+set(gcf, 'PaperPosition', [0 0 10 10]);
+print('julia2','-dpng','-r100')
+>>>>>>> 5dea9721b88e0d9d439c6dc4bd0810479ba13720

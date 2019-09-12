@@ -5,11 +5,15 @@
 
 nMax = 20;% max number of days to simulate
 x = ones(1,nMax); % population
-x(1) = 1.0; % initial condition
+x(1) = 0.2; % initial condition
 
 for n=2:nMax
     
+<<<<<<< HEAD
     x(n) = 1.1*x(n-1) + 5;
+=======
+    x(n) = 1.1*x(n-1);
+>>>>>>> 5dea9721b88e0d9d439c6dc4bd0810479ba13720
     
 end % finished loop through days
 
